@@ -1,0 +1,378 @@
+/*===============================
+    GLOBAL CSS START
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--headingFont);
+    color: var(--colorBlack);
+}
+
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--paraFont);
+    color: var(--paraColor);
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a6a6ac;
+}
+
+button {
+    border: none;
+    background: var(--colorSecondary);
+}
+
+:root {
+    --colorPrimary: #FE6043;
+    --colorSecondary: #5A5AF0;
+    --colorWhite: #ffffff;
+    --colorBlack: #1C212B;
+    --paraColor: #617087;
+    --lightColor: #EEF2F6;
+    --headingFont: "Manrope", sans-serif;
+    --paraFont: 'Open Sans', sans-serif;
+    --Font2: "Plus Jakarta Sans", sans-serif;
+    --Font3: "Questrial", sans-serif;
+    --Font4: "Geist", sans-serif;
+}
+
+
+.common_btn {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.common_btn i {
+    margin-left: 5px;
+}
+
+.common_btn:hover {
+    background: var(--colorSecondary);
+}
+
+
+/*===============================
+    GLOBAL CSS END
+===============================*/
+
+/*===============================
+    MENU START
+===============================*/
+.main_menu.menu_fix {
+    left: 0;
+    top: 0;
+    animation: menu_animate 2s;
+    -webkit-animation: menu_animate 2s;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #ddd;
+}
+
+@keyframes menu_animate {
+    from {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+}
+
+.main_menu {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+}
+
+.main_menu .navbar-brand {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 40px;
+}
+
+.main_menu .navbar-nav {
+    gap: 35px;
+    line-height: 30px;
+    margin-left: 75px;
+}
+
+.main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    color: #020407;
+    font-family: var(--Font2);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item:hover .nav-link,
+.main_menu .navbar-nav .nav-item .nav-link.active {
+    color: #0bbeb4;
+}
+
+.menu_right a {
+    color: #010205;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    border: 1px solid #010205;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.menu_right a:hover {
+    color: #0bbeb4;
+    border-color: #0bbeb4;
+}
+
+/*===============================
+    MENU END
+===============================*/
+
+
+
+/*===============================
+    BANNER START
+===============================*/
+
+.banner {
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding-bottom: 100px;
+
+}
+
+
+.banner_right {
+    position: relative;
+}
+
+.banner_img {
+    margin-top: 170px;
+    height: 630px;
+}
+
+.banner .banner_left h1 {
+    margin-top: 170px;
+    color: #111111;
+    font-size: 80px;
+    font-weight: 500;
+    width: 70%;
+    font-family: var(--headingFont);
+    margin-bottom: 30px;
+}
+
+.banner_right_text {
+    background: #fff;
+    position: absolute;
+    left: -140px;
+    top: 395px;
+    width: 420px;
+    padding: 40px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+.banner_right_text h3 {
+    color: #05131D;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0 40px 0;
+}
+
+.banner_right_text ul {
+    justify-content: space-between;
+}
+
+.banner_right_text ul li {
+    color: #00245F;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.banner_right_text p {
+    color: rgba(5, 19, 29, 0.70);
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 163%;
+    /* 27.71px */
+}
+
+.banner_left_text .img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.banner_left_text p {
+    color: rgba(5, 19, 29, 0.70);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 163%;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.banner_left_text .buttom {
+    gap: 55px;
+    margin-top: 90px;
+}
+
+.banner_left_text .buttom .icon {
+    background: #fff;
+    height: 100px;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.banner_left_text .buttom .text h2,
+.banner_left_text .buttom .text h2 span {
+    color: var(--colorBlack);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner_left_text .buttom .text p {
+    width: 100%;
+    margin: 0;
+}
+
+/*===============================
+     BANNER END
+===============================*/
+
+.live_ai_area {
+
+    background: linear-gradient(90deg, #103570 0%, #004FCE 100%);
+    ;
+    padding: 50px 0;
+}
+
+.section_heading {}
+
+.section_heading h5 {
+    color: #FCE38A;
+    font-family: Questrial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.section_heading h1 {
+    color: #FFF;
+    font-family: Questrial;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+}
