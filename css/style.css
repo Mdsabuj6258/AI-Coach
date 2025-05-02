@@ -729,3 +729,335 @@ button {
 .single_course:hover .img img {
     transform: scale(1.05) rotate(2deg);
 }
+
+
+.faq_heading h1 {
+    color: var(--Black, #111);
+    font-family: Questrial;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+}
+
+.faq_heading h4 {
+    color: #001C4A;
+    font-size: 24px;
+}
+
+.faq_text .faq_heading h2 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--headingFont2);
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.text .accordion-header {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.faq_accordion .accordion-item {
+    margin-top: 16px;
+    color: var(--colorBlack);
+    background-color: transparent;
+    border: 1px solid#eee;
+}
+
+.faq_accordion .accordion-button {
+    color: #111;
+    font-family: Questrial;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    border: 1px solid #ddd;
+}
+
+.faq_accordion .accordion-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.faq_accordion .accordion-body {
+    color: rgba(23, 23, 24, 0.60);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.faq_accordion .accordion-button:not(.collapsed) {
+    color: var(--colorWhite);
+    background-color: green;
+    box-shadow: none;
+    border-color: green;
+}
+
+.faq_accordion .accordion-button::after {
+    background-image: url(../images/plus.png);
+}
+
+.faq_accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/Minus.png);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(91%) saturate(6%) hue-rotate(35deg) brightness(108%) contrast(98%);
+}
+
+.faq_counter ul {
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.faq_counter ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.faq_counter ul li h1 {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: var(--headingFont2);
+    opacity: .2;
+}
+
+.faq_counter ul li p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: uppercase;
+    width: 38%;
+    margin-left: 15px;
+}
+
+.faq_counter ul li::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--colorSecondary);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.faq_counter ul li:last-child::after {
+    display: none;
+}
+
+.testimonial_author,
+.testimonial_comment {
+    margin: 0px 100px;
+}
+
+.testimonial_comment h3 {
+    color: #010205;
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testimonial_author {
+    margin-top: 40px;
+}
+
+.testimonial_author .img {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+
+.testimonial_author .text {}
+
+.testimonial_author .text a {
+    color: #010205;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonial_author .text a:hover {
+    color: #0bbeb4;
+}
+
+.testimonial_author .text p {
+    color: #878C91;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    /* 28.8px */
+}
+
+.footer_area {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 50px 0;
+}
+
+.subscrive_box {
+    background: linear-gradient(90deg, #103570 0%, #004FCE 100%);
+    text-align: center;
+    padding: 80px 0px;
+    border-radius: 12px;
+}
+
+.subscrive_box h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.subscrive_box p {
+    color: #B9BDC7;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.subscrive_box a {
+    color: #00245F;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    background: #FCE38A;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.subscrive_box a:hover {
+    background: #fff;
+    color: #010205;
+}
+
+footer {
+    border-bottom: 1px solid #B4B4B4;
+    padding: 30px 0;
+}
+
+.footer_logo_area {}
+
+.footer_logo_area .logo {
+    width: 240px;
+}
+
+.footer_logo_area p {
+    color: #335386;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 30px 0px;
+    width: 80%;
+}
+
+.footer_logo_area .socal_icon {
+    gap: 15px;
+}
+
+.footer_logo_area .socal_icon li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    color: #111;
+}
+
+.footer_logo_area .socal_icon li a:hover {
+    background: #0bbeb4;
+    color: #fff;
+}
+
+.Navigation_area {}
+
+.Contact_area h2,
+.Licence_area h2,
+.Navigation_area h2 {
+    color: #001C4A;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Navigation_area ul {}
+
+.Navigation_area ul li {}
+
+.Licence_area ul li a,
+.Navigation_area ul li a {
+    color: #335386;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.Contact_area ul li a:hover,
+.Navigation_area ul li a:hover,
+.Licence_area ul li a:hover {
+    color: #0bbeb4;
+    margin-left: 5px;
+}
+
+.Contact_area ul li {
+    display: flex;
+    gap: 10px;
+}
+
+.Contact_area ul li p,
+.Contact_area ul li a {
+    color: #335386;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.nextArrow,
+.prevArrow {
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    color: var(--colorBlack);
+    border-radius: 50px;
+    border: 1px solid rgba(23, 23, 24, 0.14);
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    position: absolute;
+    top: 255px;
+    right: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.prevArrow {
+    right: 68px;
+}
+
+.nextArrow,
+.nextArrow:hover,
+.prevArrow:hover {
+    background: #00245F;
+    color: var(--colorWhite);
+    border-color: #00245F;
+}
