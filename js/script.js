@@ -17,6 +17,11 @@ $(function () {
     $('.counter').countUp();
 
 
+    // progrees bar
+    $(document).ready(function () {
+        $(".progress-bar").ProgressBar();
+    });
+
 
 
 });

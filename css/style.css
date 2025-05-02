@@ -1,7 +1,7 @@
 /*===============================
     GLOBAL CSS START
 ===============================*/
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap');
 
 * {
     margin: 0;
@@ -21,6 +21,7 @@ li {
 a {
     display: inline-block;
     text-decoration: none;
+    transition: all linear .3s;
 }
 
 a:hover {
@@ -356,7 +357,9 @@ button {
     padding: 50px 0;
 }
 
-.section_heading {}
+.section_heading {
+    margin-bottom: 30px;
+}
 
 .section_heading h5 {
     color: #FCE38A;
@@ -375,4 +378,354 @@ button {
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.6px;
+}
+
+.coach_contant {
+    background: #fff;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+.coach_contant_heading h2 {
+    color: #1B1B1B;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.coach_contant .coach_massege {
+    background: #F2F3F3;
+    padding: 20px 20px 300px 20px;
+    gap: 20px;
+}
+
+.coach_contant .coach_massege .icon {
+    background: #D9D9D9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.coach_contant .coach_massege p {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    color: #181818;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 85%;
+}
+
+.coach_contant ul {
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.coach_contant ul li {
+    color: #002868;
+    font-family: Geist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: #D9D9D9;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.coach_contant form {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.coach_contant form input {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.coach_contant form button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: Geist;
+    font-size: 18px;
+    font-weight: 500;
+    background: #002868;
+    transition: all linear .3s;
+}
+
+.coach_contant form button:hover {
+    background: #0bbeb4;
+}
+
+.live_right {
+    margin-left: 100px;
+    position: relative;
+}
+
+.right_action,
+.right_Analysis {
+    background: #D9D9D9;
+    padding: 23px;
+    border-radius: 12px;
+}
+
+.right_action h2,
+.right_Analysis h2 {
+    color: #323232;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.right_Analysis .confidance_lavel {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.right_Analysis .confidance_lavel .icon {
+    color: #fff;
+    background: #06B217;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.right_Analysis .confidance_lavel p {
+    display: inline-block;
+    color: #171D25;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132%;
+    /* 23.76px */
+}
+
+.right_Analysis .confidance_lavel .icon_2 {
+    display: inline-block;
+}
+
+.right_Analysis .confidance_lavel .comment {
+    color: #909090;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+    margin-top: 10px;
+}
+
+.right_action {
+    margin-top: 30px;
+}
+
+.right_action ul {
+    gap: 20px;
+}
+
+.right_action ul li {
+    background: #fff;
+    width: 45%;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.right_action ul li .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.right_action ul li p {
+    color: #171D25;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132%;
+    /* 23.76px */
+    margin-top: 10px;
+}
+
+.live_right .right_icon {
+    top: 160px;
+    left: -99px;
+    position: absolute;
+    content: "";
+    background: #F2F3F3;
+    text-align: center;
+    padding: 25px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.live_right .right_icon li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.live_right .right_icon li a:hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(51%) saturate(5944%) hue-rotate(133deg) brightness(94%) contrast(91%);
+}
+
+
+.our_courses_area {
+    margin: 50px 0;
+}
+
+.our_course_view_btn {
+    text-align: end;
+    margin-top: 80px;
+}
+
+.our_course_view_btn a {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    background: #002868;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+.our_course_view_btn a:hover {
+    background: #0bbeb4;
+}
+
+.section_heading h2 {
+    color: var(--Grey-15, #262626);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 72px */
+}
+
+.section_heading p {
+    color: var(--Grey-35, #59595A);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+.single_course {
+    background: #F0F0F0;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.single_course ul {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.single_course ul li p {
+    color: #4C4C4D;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.single_course ul li {}
+
+.single_course ul li:last-child {
+    margin-left: auto;
+}
+
+.single_course ul li:last-child a {
+    color: var(--Grey-15, #262626);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.single_course ul li:last-child a:hover {
+    color: #0bbeb4;
+}
+
+.single_course .title {
+    color: var(--Grey-15, #262626);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 20px 0;
+}
+
+.single_course .title:hover {
+    color: #0bbeb4;
+}
+
+.single_course .comment {
+    color: var(--Grey-30, #4C4C4D);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+.single_course .get_now_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    background: #002868;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.single_course .get_now_btn:hover {
+    background: #0bbeb4;
+}
+
+.single_course .img {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.single_course .img img {
+    transition: all linear .3s;
+}
+
+.single_course:hover .img img {
+    transform: scale(1.05) rotate(2deg);
 }
